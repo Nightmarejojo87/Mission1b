@@ -14,6 +14,11 @@
         </li>
 
         <li class="menu-item">
+            <a href="index.php?uc=etatFrais&action=calcul" title="calcul de mes fiches de frais">
+                calcul frais</a>
+        </li>
+
+        <li class="menu-item">
             <a href="index.php?uc=connexion&action=deconnexion" title="Se déconnecter">Déconnexion</a>
         </li>
     </ul>

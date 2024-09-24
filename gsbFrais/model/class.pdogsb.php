@@ -136,6 +136,10 @@ class PdoGsb{
         return $laLigne;
     }
 
+    public function getmontants(){
+        
+    }
+
 
 }
 

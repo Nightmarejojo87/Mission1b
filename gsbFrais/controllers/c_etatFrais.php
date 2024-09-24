@@ -35,5 +35,9 @@ switch($action){
 		//$dateModif =  dateAnglaisVersFrancais($dateModif);
 		include("views/v_etatFrais.php");
 	}
+	case 'calcul':{
+		$numero = $pdo->getmontants();
+		include("views/v_calculFrais.php");
+	}
 
 }
