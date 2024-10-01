@@ -39,5 +39,9 @@ switch($action){
 		$numero = $pdo->getmontants();
 		include("views/v_calculFrais.php");
 	}
-
+	case 'result':{
+		$numero = $pdo->getResultat ();
+		include("views/v_result_calcul.php");
+	}
+	
 }

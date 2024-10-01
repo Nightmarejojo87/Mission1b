@@ -140,15 +140,6 @@ class PdoGsb{
         
     }
 
-   /* public function getLesInfosFicheFrais($idVisiteur, $mois){
-        $req = "select fichefrais.idEtat as idEtat, fichefrais.dateModif as dateModif, fichefrais.nbJustificatifs as nbJustificatifs, 
-            fichefrais.montantValide as montantValide, etat.libelle as libEtat from fichefraisinner join etat on fichefrais.idEtat = etat.id 
-            where fichefrais.idVisiteur = '$idVisiteur' and fichefrais.mois = '$mois'";
-        $res = PdoGsb::$monPdo->query($req);
-        $laLigne = $res->fetchAll();
-        return $laLigne;
-    }
-
     public function getResultat ($idVisiteur, $typesFrais){
         $req = "select mois, sum(lignefraisforfait.quantite * fraisforfait.montant) as montant_total from lignefraisforfait inner join fraisforfait
             on lignefraisforfait.idFraisForfait = fraisforfait.id where lignefarisforfait.idVisiteur='$idVisiteur' and fraisforfait.id = '$typesfrais'
@@ -156,6 +147,6 @@ class PdoGsb{
             $res = PdoGsb::$monPdo->query($req);
             $laligne = $res->fetchAll();
             return $laLigne;
-    }*/
+    }
 
 }

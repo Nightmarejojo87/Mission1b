@@ -24,5 +24,3 @@
     </ul>
 </nav>
 <section class="content">
-
-

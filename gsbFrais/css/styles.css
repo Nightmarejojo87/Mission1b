@@ -1,8 +1,8 @@
 /*Déclaration des variables*/
 :root{
-    --color1: #77AADD;
+    --color1: #501ca3;
     --color2: #000;
-    --color3:brown;
+    --color3:rgb(57, 12, 179);
     --color4:#FFFFFF;
 }
 body {
@@ -25,7 +25,7 @@ body {
     grid-area: a;
     /**** layout ****/
     border: 0.1em solid var(--color3);
-    background-color: #FFFFFF;
+    background-color: #370fc7;
     min-height: 80vh;
     /**** Structure de la presentation ****/
     display: grid;
