@@ -25,6 +25,9 @@ switch ($uc) {
     case 'etatFrais' :{
         include("controllers/c_etatFrais.php");break;
     }
+    case 'etat' :{
+        include("controllers/c_etat.php");break;
+    }
 }
 
 include 'views/layout/vue_pied.php';

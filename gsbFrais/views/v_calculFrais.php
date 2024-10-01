@@ -1,21 +1,24 @@
 <div id="contenu">
       <h2>Mes fiches de frais</h2>
       <h3>Mois à sélectionner : </h3>
-      <form action="index.php?uc=etatFrais&action=calcul" method="post">
+      <form action="index.php?uc=etat&action=valider" method="post">
       <div class="corpsForm">
          
       <p>
             <h2>Visiteur</h2>
 
-        <form action="traitement.php" method="post">
-            <label for="texte1">numéro:</label>
-            <input type="text" id="texte1" name="texte1"><br><br>
+    
+            <label for="num">numéro:</label>
+            <input type="text" id="num" name="num"><br><br>
 
-            <label for="texte2">type de frais:</label>
-            <input type="text" id="texte2" name="texte2"><br><br>
+            <label for="type">type de frais:</label>
+            <input type="text" id="type" name="type"><br><br>
+
+            <label for="lstAnnee" accesskey="n">annee : </label>
+            <select id="lstAnnee" name="lstAnnee">
 
             <input type="submit" value="Valider">
-        </form>
+
       </p>
 
         

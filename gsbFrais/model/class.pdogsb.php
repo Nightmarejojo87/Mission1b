@@ -142,11 +142,12 @@ class PdoGsb{
 
     public function getResultat ($idVisiteur, $typesFrais){
         $req = "select mois, sum(lignefraisforfait.quantite * fraisforfait.montant) as montant_total from lignefraisforfait inner join fraisforfait
-            on lignefraisforfait.idFraisForfait = fraisforfait.id where lignefarisforfait.idVisiteur='$idVisiteur' and fraisforfait.id = '$typesfrais'
-            group by mois";
+            on lignefraisforfait.idFraisForfait = fraisforfait.id where lignefraisforfait.idVisiteur='$idVisiteur' and fraisforfait.id = '$typesFrais'
+            group by mois";   
             $res = PdoGsb::$monPdo->query($req);
-            $laligne = $res->fetchAll();
-            return $laLigne;
+    
+            return       $res->fetchAll();
     }
+
 
 }

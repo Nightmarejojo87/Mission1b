@@ -1,7 +1,7 @@
 /*Déclaration des variables*/
 :root{
     --color1: #501ca3;
-    --color2: #000;
+    --color2: #0cbfdf;
     --color3:rgb(57, 12, 179);
     --color4:#FFFFFF;
 }
@@ -99,7 +99,7 @@ table.listeLegere {
 
 /* Tableaux quadrillés utilisés pour l'affichage de listes avec contenu léger*/
 table.listeLegere th, table.listeLegere td {
-    border : dotted rgb(178,207,81) 0.1em;
+    border : dotted rgb(233, 9, 9) 0.1em;
     padding:0.5em;
     vertical-align : top;
     text-align : left;
