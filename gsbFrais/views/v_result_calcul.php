@@ -1,6 +1,7 @@
 <?php
-/*var_dump($numero);
-var_dump($montant);*/
+var_dump($numero);
+var_dump($montant);
+var_dump($lAnnee);
 ?>
 <table class="listeLegere">
   	   
@@ -12,16 +13,16 @@ var_dump($montant);*/
         <?php      
           foreach ( $numero as $numb ) 
 		  {
-			$annee = $numb['annee'];
+			$lAnnee = $numb['annee'];
 			$montant = $numb['montant_total'];
 			
 		?>
              <tr>
-                <td><?php echo $annee ?></td>
+                <td><?php echo $lAnnee ?></td>
                 <td><?php echo $montant ?></td>
                 
              </tr>
         <?php 
           }
 		?>
-    </table>
+    </table> 
